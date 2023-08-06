@@ -1,5 +1,5 @@
 function sim() {
-    var ctz = prompt("Tem certeza ?")
+    var ctz = prompt("Tem certeza disso ?")
 
     if (ctz === "sim" || ctz === "Sim" || ctz === "SIM") {
         alert("Então vamos lá")
