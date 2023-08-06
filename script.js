@@ -7,7 +7,7 @@ function sim() {
         var dia = prompt("Dia: ")
         alert("Agora me fala o mês: ")
         var mes = prompt("Mês: ")
-        var wtp = `https://api.whatsapp.com/send?phone=5583993523059&text=dia: ${dia} / mês: ${mes}`
+        var wtp = `https://api.whatsapp.com/send?phone=5583993523059&text=dia: ${dia} / ${mes}`
         if (dia === "" || mes === "") {
             alert("Você não me informou o dia ou o mês")
             sim()
