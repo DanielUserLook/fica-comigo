@@ -1,5 +1,5 @@
 function sim() {
-    var ctz = prompt("Tem certeza disso ?")
+    var ctz = prompt("Tem certeza disso?")
 
     if (ctz === "sim" || ctz === "Sim" || ctz === "SIM") {
         alert("Então vamos lá")
@@ -7,7 +7,7 @@ function sim() {
         var dia = prompt("Dia: ")
         alert("Agora me fala o mês: ")
         var mes = prompt("Mês: ")
-        var wtp = `https://api.whatsapp.com/send?phone=5583993523050&text=dia: ${dia} / mês: ${mes}`
+        var wtp = `https://api.whatsapp.com/send?phone=5583993523059&text=dia: ${dia} / mês: ${mes}`
         if (dia === "" || mes === "") {
             alert("Você não me informou o dia ou o mês")
             sim()
@@ -15,7 +15,7 @@ function sim() {
             window.open(wtp)
         }
     } else if (ctz === "não" || ctz === "Não" || ctz === "NÃO" || ctz === "nao" || ctz === "Nao" || ctz === "NAO") {
-        var wtp = `https://api.whatsapp.com/send?phone=5583993523050&text=Tudo bem, eu já sabia que você não ia querer`
+        var wtp = `https://api.whatsapp.com/send?phone=5583993523059&text=Tudo bem, eu já sabia que você não ia querer`
         window.open(wtp)
     } else {
         alert("Você não me informou se tem certeza ou não")
