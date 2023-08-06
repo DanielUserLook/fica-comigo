@@ -7,14 +7,16 @@ function sim() {
         var dia = prompt("Dia: ")
         alert("Agora me fala o mês: ")
         var mes = prompt("Mês: ")
+        var wtp = `https://api.whatsapp.com/send?phone=5583993523050&text=dia: ${dia} / mês: ${mes}`
         if (dia === "" || mes === "") {
             alert("Você não me informou o dia ou o mês")
             sim()
         } else {
-            alert(`Então tudo certo para o ${dia}/${mes}!!`)
+            window.open(wtp)
         }
     } else if (ctz === "não" || ctz === "Não" || ctz === "NÃO" || ctz === "nao" || ctz === "Nao" || ctz === "NAO") {
-        alert("Tudo bem, eu já sabia que você não ia querer")
+        var wtp = `https://api.whatsapp.com/send?phone=5583993523050&text=Tudo bem, eu já sabia que você não ia querer`
+        window.open(wtp)
     } else {
         alert("Você não me informou se tem certeza ou não")
         sim()
@@ -22,8 +24,7 @@ function sim() {
 }
 
 function nao(btn) {
-    btn.style.position = "absolute"
-    btn.style.left = Math.random() * 1000 + "px"
-    btn.style.top = Math.random() * 500 + "px"
+    btn.style.position = "relative"
+    btn.style.left = Math.random() * 10 + "px"
+    btn.style.top = Math.random() * 10 + "px"
 }
-
